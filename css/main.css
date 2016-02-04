@@ -1,23 +1,23 @@
 .container {
-	max-width: 960px;
+	/*max-width: 960px;*/
   margin: 0 auto;
-
 }
 
 body {
 	font-size: 16px;
+  /*background-color: #343C47;*/
+  background-color: white;
 }
 
 .row {
   position: relative;
   margin-left: 60px;
-
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 4em;
   font-weight: bold;
-  color: #2F5F9E;
+  color: #62437A;
 }
 
 h3 {
@@ -43,10 +43,12 @@ button {
   color: black;
   border-radius: 10px;
   margin-bottom: 2%;
+  
 }
 
 .card {
   border: 1px solid black;
+  border-radius: 100%;
   min-height: 150px;
   min-width: 150px;
   text-align:center
@@ -92,8 +94,13 @@ button {
   background-color: orange;
 }
 
-.notFlipped {
+.flipped {
   background-image: url("../images/mnm.jpg");
-  border-radius: 100px;
+  border-radius: 100%;
   background-size: cover;
+  border: 2px solid white;
 }
+
+/*.pair {
+ 
+}*/
