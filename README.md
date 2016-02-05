@@ -32,5 +32,5 @@ Classmates
 Mentors: Danny & Daniel
 TA's - Daniel Gih, Tae Tae
 
-IMG_8687.jpg
+![alt tag](IMG_8687.jpg)
 
