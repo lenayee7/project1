@@ -10,7 +10,7 @@ $(function() {
 	for (var i = 0; i < colors.length; i++) {
 		var str = '<div class="col-md-2 card flipped ' + colors[i] +'" data-color="' + colors[i] + '"></div>';
 		// console.log(colors[i]);
-		console.log(str);
+		// console.log(str);
 		boardHTML += str
 	}
 	$('#gameBoard').append(boardHTML);
