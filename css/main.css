@@ -4,94 +4,94 @@
 }
 
 body {
+  font-family: 'Sigmar One', cursive;
 	font-size: 16px;
   /*background-color: #343C47;*/
   background-color: white;
-}
-
-.row {
-  position: relative;
-  margin-left: 60px;
+ /* background-color: white;*/
 }
 
 h1 {
-  font-size: 4em;
+  font-family: 'Sigmar One', cursive;
+  font-size: 2em;
   font-weight: bold;
   color: #62437A;
 }
 
 h3 {
   font-size: 1.5em;
-  color: red;
-}
-
-#instructions {
-  margin: 0 auto;
+  color: #AFD225;
 }
 
 p {
+  font-family: 'Orbitron', sans-serif;
   font-size: 1em;
-   font-weight: bold;
-   margin: 2 auto;
+  font-weight: bold;
+  margin: 2 auto;
 }
-
 
 button {
   background-color: #62437A;
   padding: 1%;
-  font-size: 2em;
+  font-size: 1em;
   color: black;
   border-radius: 10px;
   margin-bottom: 2%;
-  
 }
+
+#score {
+  font-size: 2em;
+  padding: 4%;
+
+}
+
 
 .card {
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 100%;
-  min-height: 150px;
-  min-width: 150px;
-  text-align:center
+  height: 170px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.gray {
-  background-color: gray;
+.brown {
+  background-image: url("../images/brown.jpg");
 }
 
 .red {
-  background-color: red;
+  background-image: url("../images/red.jpg");
 }
 
 .green {
-  background-color: green;
+  background-image: url("../images/green.jpg");
 }
 
 .purple {
-  background-color: purple;
+  background-image: url("../images/purple.jpg");
 }
 
 .blue {
-  background-color: blue;
+  background-image: url("../images/blue.jpg");
 }
 
 .pink {
-  background-color: pink;
-}
-
-.black {
-  background-color: black;
-}
-
-.white {
-  background-color: white;
-}
-
-.yellow {
-  background-color: yellow;
+  background-image: url("../images/pink.jpg");
 }
 
 .orange {
-  background-color: orange;
+  background-image: url("../images/orange.jpg");
+}
+
+.yellow {
+  background-image: url("../images/yellow.jpg");
+}
+
+.darkblue {
+  background-image: url("../images/darkblue.jpg");
+}
+
+.teal {
+  background-image: url("../images/teal.jpg");
 }
 
 .flipped {
@@ -101,6 +101,39 @@ button {
   border: 2px solid white;
 }
 
-/*.pair {
- 
-}*/
+
+
+
+
+
+/*
+@media (min-width: 1058px) {
+  .container {
+       width: 750px; 
+  }
+  .card {
+    height: 60px;
+    width: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

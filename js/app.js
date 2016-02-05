@@ -1,74 +1,62 @@
-$(document).ready(function() {
+$(function() {
+
 	console.log('testing');
 	var count = 0;
 	var $cardTag1;
 	var color1;
 	var $cardTag2;
 	var color2;
-	var points=0;
-		//remove class "card" to reveal background-color on click
+	var points = 1;
+	
 
-		// function playGame() {
-		// 	$('#playButton').one('click',function()
+	//get color1 & color2 then checkMatch();
+	function getColorInit() {
+		$('.card').on('click', function() {
+			// console.log("Score:",points);
 
-			
-
-	function getColorInitialize() {
-
-		$('.card').click(function() {
-			console.log("Score:",points);
 			if( count === 0 ) {
-				//flip the card
+				//flip one card
 				$(this).removeClass('flipped');
 				$(this).attr('data-state', 'played')
-				//save the color into temp
-				$cardTag1=$(this);
+				//save the color into color1
+				$cardTag1 = $(this);
 				color1 = $(this).attr("data-color");
 				count = 1;
+
 			} else if (count === 1 && $(this).attr("data-state")!=='played') {
 				$(this).removeClass('flipped');
 				$(this).attr("data-state",'played');
-				//save the color into temp 2
+				//save the color into color2
 				count = 2;
-				$cardTag2=$(this);
+				$cardTag2 = $(this);
 				color2 = $(this).attr("data-color");
 				checkMatch();
 			}
 		});
 	}
-	//      if (color1 === color2) {
-			 // $(this).removeClass('flipped');
-		// 		console.log('Pair');
-		// 		count = 0;
-			// }
-		// } else {
-		// 	$(this).addClass('flipped');
-		// 	count = 0;
-			// $('.card').addClass('flipped')
-
-				//TODO: keep card open (unable to flip back)
-				// $(this).removeClass('flipped');
 
 	function checkMatch(){
 		console.log('Checking Match');
 		if(color1 === color2){
+			$('#score').html("You have " + points + " points");
 			console.log("Got a match!", color1, color2)
-			// $(this).removeClass('flipped');
-			points++;
+			$cardTag1.off('click');
+			$cardTag2.off('click');
+			points ++;
+			// console.log('score: ' + points);
 			count = 0;
-		// return true
+				if(points === 10) {
+					alert('Yayy! Click Reset button to play again');
+				}
+			// remove eventlisteners from matched cards					
+				
 		} else {
+			//flip back
 			console.log("No match.. flip back")
-			// $(this).addClass('flipped');
 			count = 0;
-			flipBack($cardTag1,$cardTag2);
-			// setTimeout(function() {
-			// 	$('.card').addClass('flipped');
-			// }, 600);
-		// return false
+			flipBack($cardTag1,$cardTag2)
 		}
 	}
-
 
 	function flipBack($tag1, $tag2) {
 		setTimeout(function(){
@@ -76,13 +64,23 @@ $(document).ready(function() {
 			$tag2.addClass('flipped');
 			$tag1.attr('data-state',"");
 			$tag2.attr('data-state',"");
-		},500);
+		},200);
 	}
 
-		
-		// playGame();
-		getColorInitialize();
+	function resetGame() {
+		$('#reset').click(function(){
+			$('.card').addClass('flipped');
+			points = 0;
+			$('#score').html("You have " + points + " points");
+			location.reload();
+		});	
+	}
+
+	getColorInit();
+	resetGame();
+
 });
+
 
 
 
