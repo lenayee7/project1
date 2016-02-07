@@ -1,7 +1,7 @@
 $(function() {
 
-	var getName = prompt('What is your name?');
-			playerName = ('Yayy ' + getName + ' !!!' + ' Time to eat some M&M\'s!');
+	// var getName = prompt('What is your name?');
+	// 		playerName = ('Yayy ' + getName + ' !!!' + ' Time to eat some M&M\'s!');
 
 	console.log('testing');
 	//created color array * 2
@@ -104,6 +104,12 @@ $(function() {
 	}
 
 	//start game 
+	var glow = $('#play');
+
+	setInterval(function(){
+	    glow.hasClass('glow') ? glow.removeClass('glow') : glow.addClass('glow');
+	}, 1000);
+
 	function startGame() {
 		$('#play').one('click', function(timer){
 			$(this).toggleClass('click',timer);
@@ -111,16 +117,16 @@ $(function() {
 			var count=60;
 			var counter = setInterval(timer, 1000);
 
-				function timer() {
-				  count = count - 1;
-				  console.log(count);
-				  $('#timer').text('Timer - ' + '0: ' + count);
-				  if (count <= 0) {
-				     clearInterval(counter);
-				     	console.log('game over')
-				     return;
-				  }
-				}
+			function timer() {
+			  count = count - 1;
+			  console.log(count);
+			  $('#timer').text('Timer - ' + '0: ' + count);
+			  if (count <= 0) {
+			     clearInterval(counter);
+			     console.log('game over')
+			     return;
+			  }
+			}
 		});
 	}
 	startGame();
