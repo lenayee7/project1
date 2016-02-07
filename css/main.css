@@ -1,6 +1,6 @@
 .container {
 	/*max-width: 960px;*/
-  margin: 0 auto;
+/*  margin: 0 auto;*/
 
 }
 /*#208F90*/
@@ -8,17 +8,19 @@ body {
   font-family: 'Sigmar One', cursive;
 	font-size: 16px;
   /* opacity: .5;*/
- /* background-size: cover;
-  background-repeat: no-repeat;*/
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   /*background-image: url('http://s3.amazonaws.com/spoonflower/public/design_thumbnails/0348/5624/rrrgoldanchormint_shop_preview.png');*/
-  background-color: #208F90;
+ /* background-color: #208F90;*/
+  background-image: url("http://hdwallpaperbackgrounds.net/wp-content/uploads/2015/09/abstract-light-wallpapers-hd-desktop-bakcground.jpg");
  /* background-color: #AFD225;*/
-  /*background-color: #352545;*/
+ /* background-color: #352545;*/
   color: white;
  /* background-color: white;*/
 }
 
 h1 {
+  margin-top: 2%;
   text-shadow: 1px 1px 8px #2F7078;
   font-family: 'Orbitron';
   font-size: 2em;
@@ -27,11 +29,14 @@ h1 {
   /*color: #981255;*/
   /*text-shadow: 2px 2px #AFD225;*/
 }
+#gameBoard {
+  margin: 0 auto;
+}
 
 h3 {
  /* text-shadow: 1px 1px 8px #2F7078;*/
-  color: #2F7078;
-  /*color: white;*/
+  /*color: #2F7078;*/
+  color: #A0DF44;
   font-family: 'Orbitron', sans-serif;
   font-size: 1.5em;
   font-weight: bold;
@@ -44,7 +49,7 @@ p {
   /*color: white;*/
   color: #6D1B5D;
   font-family: 'Orbitron', sans-serif;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: bold;
   margin: 2 auto;
 }
@@ -54,23 +59,32 @@ button:hover {
   background-color: #AFD225;
   color: #352545
 }
-/*#6F374B*/
-
 
 button {
   font-weight: bold;
   font-family: 'Orbitron', sans-serif;
-  background-color: #2F7078;
+  background-color: #251B3F;
   padding: 1%;
   font-size: 1em;
-  color: #AFD225;
+  color: #A0DF44;
   border-radius: 10px;
   margin-bottom: 2%;
 }
 
+#seconds {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+span#timer {
+  font-family: 'Orbitron', sans-serif;
+}
+
 #score {
+  text-align: center;
   font-size: 2em;
-  padding: 4%;
+  padding-top: 2%;
+  display: block;
 }
 
 .flipped:hover {
@@ -78,12 +92,16 @@ button {
 }
 
 .card {
-  border: 1px solid white;
   border-radius: 100%;
-  height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
-}
+  height: 140px;
+  width: 140px;
+ /* float: right;*/
+  margin: 0 3%;
+  /*clear: left;*/
+  display: inline-block;
+  }
 
 .brown {
   background-image: url("../images/brown.jpg");
@@ -133,12 +151,22 @@ button {
   border: 2px solid white;
 }
 
+/*.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}*/
 
 @media (max-width: 1160px) {
 
-  .card {
-    height: 160px;
-  }
+   .card {
+    height: 130px;
+    width: 130px;
+    display: inline-block;
 
 }
 
@@ -173,11 +201,13 @@ button {
 
 }
 
+@media (max-width: 450px) {
 
-
-
-
-
+  .card {
+    height: 60px;
+    width: 60px;
+  }
+}
 
 
 

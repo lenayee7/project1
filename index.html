@@ -23,26 +23,32 @@
 	<body>
 		
 	<div class = "text-center container">
-		 <h1>Memorizing M-n-M's</h1>
+		<h1>Memorizing M-n-M's</h1>
 	    <div id="instructions">
 	   		<h3>Instructions</h3>
 		  		<p>
-			  		Click on any two cards.<br>
+		  		Click on any two cards.<br>
 					If the two cards match, you score.<br>
-			  		If they don't match, cards will be turned back over.<br>
+		  		If they don't match, cards will be turned back over.<br>
 					Remember what was on each card and where it was.<br>
 					The game is over when all the cards have been matched.<br>
 					It's just for funn!!<br>
 				</p>
 		 </div>
+<!-- 	  <div>
+		  <button id="play">Play Game</button>
+		</div> -->
 	  
-	  	<div>
-		  	<button id="reset">Reset Game</button>
-		  </div>
-		  <div id="gameBoard"></div>
-  		<div id="matches"><p id="score"></p></div>
- 		</div>
+		<div id="gameBoard"></div>
 
-		 </div>
+ 	</div>
+ 	<div id="matches"><p id="score">You have 0 points</p>
+ 	<div id="seconds">
+ 		<button id="play"><span id="timer">Play</span></button>
+		<div>
+		  <button id="reset">Reset Game</button>
+		</div>
+	</div>
+
 	</body>
 </html>
