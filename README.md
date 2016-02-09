@@ -5,9 +5,9 @@ You've played this before!
 ##Memorizing MnM's
 ![alt tag](mnm.jpg)
 
-![alt tag](fishies.jpg)
+![alt tag](fishie.jpg)
 
-Instructions
+###Instructions
 Please type your name in pop-up box to start the game.
 Click on any two m&m cards.
 If the two m&m colors match, you score a point.
