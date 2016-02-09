@@ -3,8 +3,9 @@
 You've played this before!
 
 ##Memorizing MnM's
+![alt tag](mnm.jpg)
 
-![alt tag](../images/dani-draw.jpg)
+![alt tag](fishies.jpg)
 
 Instructions
 Please type your name in pop-up box to start the game.
@@ -15,19 +16,20 @@ If they don't match, cards will be turned back over.
 The game is over when you match all the cards which means 10 points total.
 It's just for funnz!!
 
-[Memorizing MnM's]
-(http://bartender-crab-fishies.bitballoon.com/)
+**Play Game: [Memorizing MnM's](http://bartender-crab-fishies.bitballoon.com/)
 
 ###Technologies:
 * Jquery
 * Javascript
 * HTML
 * CSS
+* Bootstrap
 
 ###Tools to help organize game:
 * Trello
 * User Stories
 * Simple wireframe
+* Bit Balloon
 
 ###Shout OUTS :
 All Instructors
@@ -37,5 +39,5 @@ Mentors: Danny & Daniel
 TA's - Daniel Gih, Tae Tae
 
 
-![alt tag](../images/dani-draw.jpg)
+![alt tag](dani-draw.jpg)
 
