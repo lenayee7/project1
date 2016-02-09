@@ -26,7 +26,7 @@ It's just for funnz!!
 * Bootstrap
 
 ###Tools to help organize game:
-* Trello
+* Trello: [Trello](https://trello.com/b/SgIVeMEd/project-1-memory-game)
 * User Stories
 * Simple wireframe
 * Bit Balloon
