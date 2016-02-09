@@ -5,11 +5,7 @@ You've played this before!
 ##Memorizing MnM's
 ![alt tag](mnm.jpg)
 
-<<<<<<< HEAD
 ![alt tag](fishie.png)
-=======
-![alt tag](fishie.jpg)
->>>>>>> 29093bdda862f0c749f9ab63d82159b32959d212
 
 ###Instructions
 Please type your name in pop-up box to start the game.
