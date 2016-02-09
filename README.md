@@ -1,36 +1,41 @@
-Project1
+#**Project1**
 
 You've played this before!
 
-Memorizing MnM's
+##Memorizing MnM's
 
+![alt tag](../images/dani-draw.jpg)
+
+Instructions
+Please type your name in pop-up box to start the game.
 Click on any two m&m cards.
 If the two m&m colors match, you score a point.
 Remember what was on each card and where it was.
 If they don't match, cards will be turned back over.
-The game is over when all the cards have been matched.
-It's just for funn!!
+The game is over when you match all the cards which means 10 points total.
+It's just for funnz!!
 
-BitBalloon:
-http://bartender-crab-seven.bitballoon.com/
+[Memorizing MnM's]
+(http://bartender-crab-fishies.bitballoon.com/)
 
-Technologies:
-- Jquery
-- Javascript
-- HTML
-- CSS
+###Technologies:
+* Jquery
+* Javascript
+* HTML
+* CSS
 
-Tools to help organize game:
-- Trello
-- User Stories
-- Simple wireframe
+###Tools to help organize game:
+* Trello
+* User Stories
+* Simple wireframe
 
-Shout OUTS :
+###Shout OUTS :
 All Instructors
-Stand Up leader, best artist: Dani
-Classmates 
+Stand Up leader, best artist: Dani - thanks for keeping us moving
+Classmates - positive vibes, encouraging words
 Mentors: Danny & Daniel
 TA's - Daniel Gih, Tae Tae
 
-![alt tag](IMG_8687.jpg)
+
+![alt tag](../images/dani-draw.jpg)
 

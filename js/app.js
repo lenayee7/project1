@@ -1,12 +1,22 @@
 $(function() {
+	
+	$('#hide').hide();
+	
+	var getName = prompt('What is your name?');
+	getName = getName.toUpperCase();
+	newString = 'Let\'s go '+ getName + ' !!!';
+  $('h1').css("color","yellow");
+	$('h1').text(newString);
 
-	// var getName = prompt('What is your name?');
-	// 		playerName = ('Yayy ' + getName + ' !!!' + ' Time to eat some M&M\'s!');
-
+  playerName =  ('Yayy ' + getName + ' !!!' + ' Time to eat some M&M\'s!');
+			
 	console.log('testing');
-	//created color array * 2
+	//create color array * 2
 	var colors = ["red","green","blue","orange","purple","brown","silver","teal","yellow","darkblue"];
 	colors = colors.concat(colors);
+	//create an images array * 2
+	// var images = ["red","green","blue","orange","purple","brown","silver","teal","yellow","darkblue"];
+	// images = images.concat(images);
 	//randomized colors
 	colors = shuffleArray(colors);
 	//created divs for each color & appended to #gameBoard
@@ -26,7 +36,7 @@ $(function() {
 	var $cardTag2;
 	var color2;
 	var points = 1;
-	
+
 	function shuffleArray(array) {
     for (var i = array.length - 1; i > 0; i--) {
         var j = Math.floor(Math.random() * (i + 1));
@@ -35,6 +45,48 @@ $(function() {
         array[j] = temp;
     	}
     	 return array;
+	}
+
+//start game 
+	glow = $('.glow');
+	setInterval(function(){
+	  glow.hasClass('glow') ? glow.removeClass('glow') : glow.addClass('glow');
+		}, 1000);
+
+
+	function startGame() {
+			
+		$('#play').one('click', function(timer){
+			$(this).addClass('no-glow');
+		
+			$('#instructions').hide();
+			// console.log($(this))
+			getColorInit();
+
+			var count=60;
+			var counter = setInterval(timer, 1000);
+			function timer() {
+			  count = count - 1;
+			  console.log(count);
+			  $('#timer').text('Timer - ' + count + ' secs');
+			  	if (points === 11 && count > 0) {
+			  		console.log('you did it!!');
+			  		clearInterval(counter);
+			  	}
+					  if (count <= 0) {
+				  		console.log('You lose!');
+				  		clearInterval(counter);
+				  		$('#gameBoard').hide();
+			     		$('#hide').show();
+					  }
+					  	// if (cheat === 'stop timer') {
+					  	// 	console.log(cheat)
+					  	// 	console.log('cheating');
+					  	// 	cheatGame();
+					  	// }
+			  	return;  	
+			  }
+		});
 	}
 
 	//get color1 & color2 then checkMatch();
@@ -73,10 +125,8 @@ $(function() {
 			// console.log('score: ' + points);
 			count = 0;
 				if(points === 11) {
-				console.log(playerName);
+					alert(playerName);
 				}
-			// remove eventlisteners from matched cards					
-				
 		} else {
 			//flip back
 			console.log("No match.. flip back")
@@ -91,7 +141,7 @@ $(function() {
 			$tag2.addClass('flipped');
 			$tag1.attr('data-state',"");
 			$tag2.attr('data-state',"");
-		},200);
+		},300);
 	}
 
 	function resetGame() {
@@ -103,34 +153,16 @@ $(function() {
 		});	
 	}
 
-	//start game 
-	var glow = $('#play');
+	// function cheatGame() {
+	// 	console.log('cheating');
+	// 	points = 11;
+	// 	$('.card').removeClass('flipped');
+	// 	clearInterval();
+	// }
 
-	setInterval(function(){
-	    glow.hasClass('glow') ? glow.removeClass('glow') : glow.addClass('glow');
-	}, 1000);
-
-	function startGame() {
-		$('#play').one('click', function(timer){
-			$(this).toggleClass('click',timer);
-			getColorInit();
-			var count=60;
-			var counter = setInterval(timer, 1000);
-
-			function timer() {
-			  count = count - 1;
-			  console.log(count);
-			  $('#timer').text('Timer - ' + '0: ' + count);
-			  if (count <= 0) {
-			     clearInterval(counter);
-			     console.log('game over')
-			     return;
-			  }
-			}
-		});
-	}
 	startGame();
 	resetGame();
+	// cheatGame()
 
 });
 

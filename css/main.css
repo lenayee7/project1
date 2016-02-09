@@ -14,11 +14,11 @@ body {
 }
 
 h1 {
-  margin-top: 7%;
-/*  text-shadow: 1px 1px 8px #2F7078;*/
+  margin-top: 10%;
   font-family: 'Orbitron';
-  font-size: 2em;
+  font-size: 2.3em;
   font-weight: bold;
+  color: yellowf;
   color: #6D1B5D;
 }
 
@@ -33,13 +33,12 @@ h3 {
 p {
   /*text-shadow: 1px 1px 8px #FF0000;*/
   /*color: #C9E60D;*/
-  color: white;
+  color: red;
  /* color: #6D1B5D;*/
   /*font-family: monospace;*/
   font-family: 'Orbitron', sans-serif;
-  font-size: 1.4em;
+  font-size: 1em;
   font-weight: bold;
-  margin: 2 auto;
 }
 
 .glow {
@@ -60,7 +59,11 @@ p {
 }
 
 #btn2 {
-  padding-bottom: 8%;
+  padding-bottom: 5%;
+}
+
+.no-glow {
+  background-color: #251B3F;
 }
 
 button:hover {
@@ -73,7 +76,7 @@ button {
   font-weight: bold;
   font-family: 'Orbitron', sans-serif;
   background-color: #251B3F;
-  font-size: 1.2em;
+  font-size: 1em;
   color: #A0DF44;
   border-radius: 10px;
   margin-bottom: 2%;
@@ -101,8 +104,8 @@ span#timer {
   border-radius: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 150px;
-  width: 150px;
+  height: 130px;
+  width: 130px;
  /* float: right;*/
   margin: 0 3%;
   /*clear: left;*/
@@ -154,6 +157,18 @@ span#timer {
   border-radius: 100%;
   background-size: cover;
   border: 2px solid white;
+}
+
+#nella {
+  height: 300px;
+  width: 360px;
+  border-radius: 20px;
+}
+#slade {
+  height: 300px;
+  width: 360px;
+  border-radius: 20px;
+
 }
 
 /*
