@@ -16,7 +16,7 @@ If they don't match, cards will be turned back over.
 The game is over when you match all the cards which means 10 points total.
 It's just for funnz!!
 
-*Play Game: [Memorizing MnM's](http://bartender-crab-fishies.bitballoon.com/)
+####Play Game: [Memorizing MnM's](http://bartender-crab-fishies.bitballoon.com/)
 
 ###Technologies:
 * Jquery
