@@ -2,7 +2,7 @@
 
 You've played this before!
 
-##Memorizing MnM's
+##Memorizing M&M's
 ![alt tag](mnm.jpg)
 
 ![alt tag](fishie.png)
